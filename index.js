@@ -2,7 +2,7 @@ const express = require('express');
 const format = require('date-format');
 const app = express();
 
-const port = 4000 || process.env.PORT;
+const port = process.env.PORT || 4000;
 
 app.get('/', (req, res)=>{
    res.status(200).send("giving you a status code")
